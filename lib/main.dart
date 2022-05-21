@@ -1,8 +1,12 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:keto_diet/screens/home_screen.dart';
 import 'package:keto_diet/screens/intro_screen.dart';
 import 'package:keto_diet/screens/login_screen.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(const MyApp());
 }
 
@@ -48,6 +52,7 @@ class MyApp extends StatelessWidget {
         'login': (context) => const LoginScreen(authType: AuthType.login),
         'register': (context) => const LoginScreen(authType: AuthType.register),
         'intro': (context) => const IntroScreen(),
+        'home': (context) => const HomeScreen(),
       },
     );
   }

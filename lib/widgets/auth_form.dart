@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:keto_diet/screens/login_screen.dart';
 import 'package:keto_diet/widgets/original_button.dart';
@@ -92,7 +93,19 @@ class _AuthFormState extends State<AuthForm> {
 }
 
 class AuthBase {
-  loginWithEmailAndPassword(String email, String password) {}
+  final _auth = FirebaseAuth.instance;
 
-  registerWithEmailAndPassword(String email, String password) {}
+  Future<UserCredential> loginWithEmailAndPassword(
+      String email, String password) async {
+    final user = await _auth.signInWithEmailAndPassword(
+        email: email, password: password);
+    return user;
+  }
+
+  Future<UserCredential> registerWithEmailAndPassword(
+      String email, String password) async {
+    final newUser = await _auth.createUserWithEmailAndPassword(
+        email: email, password: password);
+    return newUser;
+  }
 }
