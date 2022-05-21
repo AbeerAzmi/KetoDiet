@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Bero',
+      title: 'Keto Diet',
       theme: ThemeData(
         primarySwatch: Colors.blue,
         textTheme: TextTheme(
