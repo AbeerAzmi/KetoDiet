@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "17980067278",
+    "project_id": "keto-diet-a6d68",
+    "storage_bucket": "keto-diet-a6d68.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:17980067278:android:44dfd177d77480cbf42f9f",
+        "android_client_info": {
+          "package_name": "com.example.keto_diet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "17980067278-mnj7guhbe0fh57hs850aiouddt08ehg9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLgdo7GeMFESai5Gh2OPV-8V7khz2_Oj8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "17980067278-mnj7guhbe0fh57hs850aiouddt08ehg9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
