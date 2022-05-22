@@ -16,6 +16,7 @@ const zLabelTextStyle = TextStyle(
 const zNumberStyle = TextStyle(
   fontSize: 50.0,
   fontWeight: FontWeight.w900,
+  color: Color(0xFFEB1555),
 );
 
 const zRoundIconButtonConstraint = BoxConstraints.tightFor(
@@ -34,17 +35,19 @@ const zTitleTextStyle = TextStyle(
 );
 
 const zResultsTextStyle = TextStyle(
-  color: Color(0xFF24D876),
+  color: Color(0xFFEB1555),
   fontSize: 30.0,
   fontWeight: FontWeight.bold,
 );
 
 const zBMITextStyle = TextStyle(
   fontSize: 120.0,
+  color: Colors.white,
   fontWeight: FontWeight.bold,
 );
 
 const zBodyTextStyle = TextStyle(
+  color: Color(0xFFEB1555),
   fontSize: 20.0,
 );
 

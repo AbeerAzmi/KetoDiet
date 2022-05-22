@@ -7,7 +7,7 @@ class IntroScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 19, 141, 24),
+      backgroundColor: (Colors.white),
       body: Center(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
@@ -15,12 +15,12 @@ class IntroScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
               const SizedBox(),
-              Image.asset('assets/images/logo.png'),
+              Image.asset('assets/images/logo4.png'),
               OrignalButton(
                 text: 'Get Started',
                 onPressed: () => Navigator.of(context).pushNamed('login'),
-                textcolor: Colors.lightGreen,
-                bgcolor: Colors.white,
+                textcolor: Colors.white,
+                bgcolor: const Color(0xFFEB1555),
                 height: 60,
               ),
             ],

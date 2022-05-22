@@ -21,6 +21,7 @@ class Results extends StatelessWidget {
         appBar: AppBar(
           elevation: 0,
           title: const Text('BMI CALCULATOR'),
+          backgroundColor: const Color(0xFFEB1555),
         ),
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,

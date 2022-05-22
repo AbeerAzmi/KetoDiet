@@ -11,7 +11,7 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: const Color(0xFFEB1555),
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
@@ -20,7 +20,7 @@ class LoginScreen extends StatelessWidget {
                 Container(
                   height: MediaQuery.of(context).size.height * 0.5,
                   decoration: const BoxDecoration(
-                    color: Color.fromARGB(255, 77, 129, 17),
+                    color: Colors.white,
                     borderRadius: BorderRadius.only(
                         bottomLeft: Radius.circular(50),
                         bottomRight: Radius.circular(50)),
@@ -44,7 +44,7 @@ class LoginScreen extends StatelessWidget {
                       Hero(
                         tag: 'logoAnimation',
                         child: Image.asset(
-                          'assets/images/logo.png',
+                          'assets/images/logo4.png',
                           height: 280,
                         ),
                       ),
